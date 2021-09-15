@@ -22,15 +22,15 @@ Resonance & Wonder will be a business to consumer marketplace wbsite for approve
 
 | Component                        | Priority | Estimated Time | Time Invested |
 | -------------------------------- | :------: | :------------: | :-----------: |
-| Build Repositories               |    H     |     15mins     |      hrs      |
-| Add dependencies, folders, files |    H     |     15mins     |      hrs      |
+| Build Repositories               |    H     |     15mins     |    .25hrs     |
+| Add dependencies, folders, files |    H     |     15mins     |    .25hrs     |
 | Set up Heroku / Deploy           |    H     |     15mins     |      hrs      |
 | Connecting Server                |    H     |      1hrs      |      hrs      |
 | Routes                           |    H     |      2hrs      |      hrs      |
 | Controllers                      |    H     |      2hrs      |      hrs      |
 | Seed Data                        |    H     |      2hrs      |      hrs      |
 | Install and set up react router  |    H     |     15mins     |      hrs      |
-| Set up pages                     |    H     |      3hrs      |      hrs      |
+| Set up pages                     |    H     |      3hrs      |     3hrs      |
 | Authorization                    |    H     |      4hrs      |      hrs      |
 | Switch, Links, Routes            |    H     |      2hrs      |      hrs      |
 | Header (Menu Button & Login)     |    H     |      3hrs      |      hrs      |
@@ -46,7 +46,7 @@ Resonance & Wonder will be a business to consumer marketplace wbsite for approve
 | Individual Products Page Styling |    M     |      3hrs      |      hrs      |
 | All Products Page Styling        |    M     |      3hrs      |      hrs      |
 | User Page Styling                |    M     |      3hrs      |      hrs      |
-| Learning New Tech                |    M     |     10hrs      |      hrs      |
+| Learning New Tech                |    M     |     10hrs      |     10hrs     |
 | Total                            |    H     |     65hrs      |      hrs      |
 
 | Component                   | Priority | Estimated Time | Time Invested |
@@ -58,6 +58,8 @@ Resonance & Wonder will be a business to consumer marketplace wbsite for approve
 | Favorites List              |    H     |      3hrs      |      hrs      |
 | Booking component           |    H     |      2hrs      |      hrs      |
 | Page for completed purchase |    H     |      2hrs      |      hrs      |
+| Category Products Pages     |    H     |      3hrs      |      hrs      |
+| Category Pages Styling      |    H     |      3hrs      |      hrs      |
 | Total                       |    H     |     25hrs      |      hrs      |
 
 ## MVP/Post-MVP
@@ -115,6 +117,7 @@ Frontend
   - Cart adds up items
   - Paypal, Square, Stripe... payment
 - Purchase Successful Page
+- Category Projects pages
 
 ## Components - Descriptions
 
@@ -125,6 +128,7 @@ Frontend
 - HTML
 - CSS
 - React, react-router-dom
+- Reactstrap
 - Next.js
 - Node
 - Express
