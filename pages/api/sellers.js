@@ -1,7 +1,7 @@
 import { getAccessToken, withApiAuthRequired } from "@auth0/nextjs-auth0";
 import { query as q, Client } from "faunadb";
 
-export default withApiAuthRequired(async function shows(req, res) {
+export default withApiAuthRequired(async function sellers(req, res) {
   try {
     const { accessToken } = await getAccessToken(req, res);
     const client = new Client({ secret: accessToken });
@@ -17,7 +17,7 @@ export default withApiAuthRequired(async function shows(req, res) {
 
     console.log(data);
 
-    res.status(200).json(shows);
+    res.status(200).json(sellers);
   } catch (error) {
     res.status(error.status || 500).json({ error: error.message });
   }

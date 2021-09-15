@@ -44,6 +44,11 @@ const FeaturedProducts = (props) => {
   //     );
   //   };
 
+  const test = async () => {
+    const response = await fetch("/api/products");
+    const data = await response.json();
+    console.log(data);
+  };
   return (
     <>
       <div className="products-header">
@@ -55,6 +60,7 @@ const FeaturedProducts = (props) => {
       <div className="products-container">
         {/* {props.location === "" ? allProducts() : filteredProducts()} */}
       </div>
+      <button onClick={test}>Test</button>
     </>
   );
 };
