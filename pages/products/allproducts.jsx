@@ -1,5 +1,5 @@
 import React from "react";
-import Product from "../components/Product";
+import Product from "../../components/Product";
 
 const allproducts = () => {
   return props.products.map((product) => (

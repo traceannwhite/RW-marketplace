@@ -47,7 +47,14 @@ const Form = ({ initialProduct, handleSubmit, buttonLabel, history }) => {
           //   value={formData.category}
           name="category"
           placeholder="Category"
-        />
+        >
+          <datalist id="category">
+            <option value="Clothing and Shoes" />
+            <option value="Home and Living" />
+            <option value="Eco-friendly Products" />
+            <option value="Self-care Goods" />
+          </datalist>
+        </input>
         <input
           type="text"
           onChange={handleChange}

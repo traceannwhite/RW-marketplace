@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Container, Navbar, Nav, NavItem, NavLink } from "reactstrap";
 import SearchBar from "./Searchbar";
 import { RiShoppingCartLine } from "react-icons/ri";
-import NavAuth from "./NavAuth";
+// import NavAuth from "./NavAuth";
 
 const NavBar = () => {
   return (
@@ -17,7 +17,7 @@ const NavBar = () => {
           </NavLink>
         </Container>
         <Container className="user-links">
-          <NavAuth />
+          {/* <NavAuth /> */}
           <NavItem>
             <NavLink href="/cart">
               <RiShoppingCartLine />
