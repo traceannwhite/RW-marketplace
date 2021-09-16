@@ -1,14 +1,20 @@
 import "../styles/globals.css";
-// import { UserProvider } from "@auth0/nextjs-auth0";
+import { SessionProvider } from "next-auth/react";
 import SiteLayout from "../components/SiteLayout";
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps: { session, ...pageProps } }) {
   return (
-    // <UserProvider>
-    <SiteLayout>
-      <Component {...pageProps} />
-    </SiteLayout>
-    // </UserProvider>
+    <SessionProvider
+      options={{
+        clientMaxAge: 0,
+        keepAlive: 0,
+      }}
+      session={pageProps.session}
+    >
+      <SiteLayout>
+        <Component {...pageProps} />
+      </SiteLayout>
+    </SessionProvider>
   );
 }
 

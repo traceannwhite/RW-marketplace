@@ -17,6 +17,8 @@ const NavBar = () => {
           </NavLink>
         </Container>
         <Container className="user-links">
+          <NavLink href="/signup">Sign Up</NavLink>
+          <NavLink href="/login">Log In</NavLink>
           {/* <NavAuth /> */}
           <NavItem>
             <NavLink href="/cart">

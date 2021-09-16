@@ -1,10 +1,10 @@
 import React from "react";
-import Product from "../../components/Product";
+import Product from "../components/Product";
 
-const allproducts = () => {
+const products = (props) => {
   return props.products.map((product) => (
     <Product product={product} key={product.id} />
   ));
 };
 
-export default allproducts;
+export default products;
