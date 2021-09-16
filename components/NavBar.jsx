@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Container, Navbar, Nav, NavItem, NavLink } from "reactstrap";
 import SearchBar from "./Searchbar";
 import { RiShoppingCartLine } from "react-icons/ri";
+import Image from "next/image";
+
 // import NavAuth from "./NavAuth";
 
 const NavBar = () => {
@@ -10,7 +12,7 @@ const NavBar = () => {
       <Navbar color="light" light expand="md" className="nav-bar">
         <Container className="home-logo">
           <NavLink href="/" className="nav-link" id="navbar-home">
-            <img
+            <Image
               src="https://res.cloudinary.com/dhcagrzcb/image/upload/v1631639955/resonance_wonder_u5ooyz.png"
               style={{ width: "7em" }}
             />
@@ -27,7 +29,7 @@ const NavBar = () => {
           </NavItem>
         </Container>
       </Navbar>
-      <SearchBar />
+      {/* <SearchBar /> */}
       <Nav className="product-pages-links">
         <NavItem>
           <NavLink href="/products/clothingandshoes/">

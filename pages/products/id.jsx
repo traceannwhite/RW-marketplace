@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const SingleProduct = ({ match, products, edit, deleteProduct }) => {
   const id = parseInt(match.params.id);
@@ -8,7 +9,7 @@ const SingleProduct = ({ match, products, edit, deleteProduct }) => {
   return (
     <div className="product-page">
       <div className="product-images">
-        <img src={product.image} alt="product" />
+        <Image src={product.image} alt="product" />
       </div>
       <div className="product-details">
         <h3>{product.title}</h3>
